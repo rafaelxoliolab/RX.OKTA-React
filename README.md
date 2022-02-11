@@ -2,7 +2,7 @@
 Sample about Implementing Okta authentication in a React app
 
 ## Prerequisites
-* Familiar with Javascript 
+* To be familiared with Javascript 
 
 ## Setting up
 
@@ -12,3 +12,4 @@ Sample about Implementing Okta authentication in a React app
 - Create a developer account
 
 
+### Create 
