@@ -35,3 +35,44 @@ there you can see the information requiered to connect OKTA with React:
 - ClientID
 - Client authentication
 - Okta domain
+
+## Integration with React
+
+### Create a new React application
+
+1. Go to VS code
+2. Open a new terminal
+3. run command `npx create-react-app test-spa-okta-react`
+4. move into the app folder `cd test-spa-okta-react`
+5. run command `npm start`
+
+### Install OKTA SDK and OKTA Auth JavaScript SDK 
+
+1. Go to VS code
+2. Open a new terminal
+3. Run command 
+  ```
+  # yarn
+  yarn add @okta/okta-auth-js @okta/okta-react
+
+  # npm
+  npm install --save @okta/okta-auth-js @okta/okta-react'
+  ```
+### Configure OKTA data in .env file
+
+1. Create a new file .env on root
+2. Create and configure environmental variables
+```
+OKTA_DOMAIN=<YOUR_OKTA_DOMAIN>
+CLIENT_ID=<YOUR_CLIENT_ID>
+CALLBACK_PATH='/login/callback'
+ISSUER='https://<YOUR_OKTA_DOMAIN>/oauth2/default'
+HOST='window.location.host'
+SCOPES='openid profile email'
+```
+
+
+  
+
+
+
